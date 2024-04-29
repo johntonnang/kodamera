@@ -43,6 +43,13 @@ export const pageType = defineType({
       options: {
         hotspot: true,
       },
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+        },
+      ],
     }),
     defineField({
       name: 'subheading',
