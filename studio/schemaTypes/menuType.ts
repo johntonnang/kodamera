@@ -37,6 +37,11 @@ export const menuType = defineType({
       of: [{type: 'link'}],
       validation: (Rule) => Rule.min(1).error('A menu must have at least one link.'),
     }),
+    defineField({
+      name: 'link',
+      type: 'link',
+      title: 'Contact link',
+    }),
   ],
   preview: {
     select: {
