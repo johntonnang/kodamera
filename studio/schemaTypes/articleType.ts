@@ -71,6 +71,16 @@ export const articleType = defineType({
       name: 'image',
       type: 'image',
       group: 'editorial',
+      options: {
+        hotspot: true,
+      },
+      fields: [
+        {
+          name: 'alt',
+          type: 'string',
+          title: 'Alternative text',
+        },
+      ],
     }),
     defineField({
       name: 'details',
