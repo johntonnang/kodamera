@@ -4,21 +4,37 @@
 
 
 @layer utilities {
+  html {
+    @apply flex items-center justify-center
+  }
+
   body {
-    @apply m-0 p-0 flex items-center justify-center text-main-black bg-main-white xl:px-20 xl:py-24
+    @apply m-0 p-0 flex items-center justify-center text-main-black bg-main-white px-0 md:px-8 xl:px-20 xl:py-24 max-w-screen-xl w-full
   }
+
   main {
-    @apply max-w-screen-xl px-8 w-full pt-20 gap-8
+    @apply px-4 lg:px-8 w-full pt-[calc(72px_+_44px)] pb-16 lg:pt-[calc(80px_+_96px)] lg:pb-24 gap-8
   }
+
   section {
     @apply w-full
   }
 
   .main-btn {
-    @apply text-18 flex bg-main-black px-7 py-4 text-main-white w-[168px] h-[60px] font-medium hover:bg-main-red duration-300 ease-in-out transition
+    @apply text-16 md:text-18 flex items-center justify-center bg-main-black px-7 py-4 text-main-white w-full md:w-[168px] h-12 md:h-[60px] font-medium hover:bg-main-red duration-300 ease-in-out transition
   }
 
   .secondary-btn {
     @apply text-16 flex bg-main-black px-[18px] py-2.5 text-main-white w-24 h-11 font-medium hover:bg-main-red duration-300 ease-in-out transition
+  }
+
+  .rotate-left {
+    transform: rotate(45deg) translate(2.8px, -5px);
+    transform-origin: left;
+  }
+
+  .rotate-right {
+    transform: rotate(-45deg) translate(2.8px, 5px);
+    transform-origin: left;
   }
 }
