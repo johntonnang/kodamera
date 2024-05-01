@@ -1,11 +1,11 @@
 import {defineField, defineType} from 'sanity'
-import {ImageIcon, TextIcon} from '@sanity/icons'
+import {DocumentIcon, TextIcon} from '@sanity/icons'
 
-export const pageType = defineType({
-  name: 'page',
-  title: 'Page',
+export const heroType = defineType({
+  name: 'hero',
+  title: 'Hero',
   type: 'document',
-  icon: ImageIcon,
+  icon: DocumentIcon,
   fields: [
     defineField({
       name: 'title',
